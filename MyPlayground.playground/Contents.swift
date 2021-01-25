@@ -89,9 +89,9 @@ class Tiger: Animal, RunningCreature {
     }
     
     init(runningSpeed: Int, numberPaws: Int) {
-        super.init(isHerbivorous: false, name: "")
         self.runningSpeed = runningSpeed
         self.numberPaws = numberPaws
+        super.init(isHerbivorous: false, name: "")
     }
     
     func run() {
@@ -130,7 +130,7 @@ class Parrot: Animal, SpeakingCreature {
     
     init(selfVoice: Voice) {
         self.selfVoice = selfVoice
-        super.init(isHerbivorous: false, name: name)
+        super.init(isHerbivorous: true, name: "")
     }
     
     func mute() {
